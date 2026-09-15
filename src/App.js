@@ -1,12 +1,19 @@
-import { StatusBar } from 'expo-status-bar';
-import { SafeAreaProvider } from 'react-native-safe-area-context';
-import LoginScreen from './screens/Login'; // Puxe do caminho onde salvou a screen
+import { Button, Image, Pressable, Text, TextInput, TouchableOpacity } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context'
+import { Card } from './components/Card/index';
+import { Login } from './screens/Login';
+import { Cadastro } from './screens/Cadastro';
+import { Home } from './screens/Home';
+import { Producs } from './screens/Products';
 
 export default function App() {
   return (
-    <SafeAreaProvider>
-      <StatusBar style="dark" />
-      <LoginScreen />
-    </SafeAreaProvider>
+    <SafeAreaView>
+      {/* <Login/>      */}
+      {/* <Cadastro/> */}
+      <Home/>
+      {/* <Producs/> */}
+      
+    </SafeAreaView>
   );
 }
