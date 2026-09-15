@@ -4,12 +4,14 @@ export const BoxProducts = styled.View`
     border: 1px solid #D4D4D4;
     border-radius: 7px;
     width: 175px;
+    align-items: center;
 `
 
 export const ProductImage = styled.Image`
-    width: 174px;
-    height: 111px;
-    border-radius: 7px 7px 0 0; 
+    object-fit: contain;
+    width: 164px;
+    height: 200px;
+    border-radius: 7px 7px 0 0;
 `
 
 export const ProductsDescription = styled.View`
