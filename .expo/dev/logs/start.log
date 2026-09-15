@@ -337,3 +337,24 @@
 {"_e":"metro:client_log","_t":1789481396882,"level":"error","data":["[ReferenceError: Property 'Products' doesn't exist]"]}
 {"_e":"metro:bundling:failed","_t":1789481419338,"id":"5","message":"Unable to resolve \"./screens/\" from \"src\\App.js\"\n   5 | import { Cadastro } from './screens/Cadastro';\n   6 | import { Home } from './screens/Home';\n>  7 | import { Producs } from './screens/';\n     |                          ^\n   8 |\n   9 | export default function App() {\n  10 |   return (","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39msrc\\App.js\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"./screens/\"\u001b[39m\n\n\u001b[90m \u001b[39m\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"./src/App\"\u001b[39m\n","filename":null,"targetModuleName":"./screens/","originModulePath":"src\\App.js"}
 {"_e":"metro:client_log","_t":1789481441285,"level":"error","data":["[Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.\n\nCheck the render method of `App`.]"]}
+{"_e":"root:init","_t":1789481462408,"format":"v0-jsonl","version":"57.0.16"}
+{"_e":"env:mode","_t":1789481462413,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1789481462427,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1789481463921,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1789481466604,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1789481468271,"plugins":[]}
+{"_e":"metro:instantiate","_t":1789481474975,"atlas":false,"workers":12,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1789481520454,"id":"2","platform":"android","environment":null,"entry":"src\\index.js"}
+{"_e":"metro:bundling:progress","_t":1789481520455,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1789481520458,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1789481520559,"id":"2","progress":0.004792899408284024,"total":130,"current":9}
+{"_e":"metro:bundling:progress","_t":1789481520627,"id":"2","progress":0.00591715976331361,"total":130,"current":10}
+{"_e":"metro:bundling:progress","_t":1789481520726,"id":"2","progress":0.19311310927790618,"total":289,"current":127}
+{"_e":"metro:bundling:progress","_t":1789481520826,"id":"2","progress":0.2828613736865593,"total":314,"current":167}
+{"_e":"metro:bundling:progress","_t":1789481520927,"id":"2","progress":0.414089364354803,"total":446,"current":287}
+{"_e":"metro:bundling:progress","_t":1789481521027,"id":"2","progress":0.4702040816326531,"total":490,"current":336}
+{"_e":"metro:bundling:progress","_t":1789481521131,"id":"2","progress":0.6980836754301686,"total":535,"current":447}
+{"_e":"metro:bundling:progress","_t":1789481521230,"id":"2","progress":0.7894759473259877,"total":610,"current":542}
+{"_e":"metro:bundling:progress","_t":1789481521332,"id":"2","progress":0.8321639666683919,"total":695,"current":634}
+{"_e":"metro:bundling:progress","_t":1789481521432,"id":"2","progress":0.9444187198774829,"total":745,"current":724}
+{"_e":"metro:bundling:done","_t":1789481521549,"id":"2","total":745,"ms":1094.1128}
