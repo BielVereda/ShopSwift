@@ -4,15 +4,15 @@ import { Card } from './components/Card/index';
 import { Login } from './screens/Login';
 import { Cadastro } from './screens/Cadastro';
 import { Home } from './screens/Home';
-import { Producs } from './screens/Products';
+import { Products } from './screens/Products';
 
 export default function App() {
   return (
     <SafeAreaView>
       {/* <Login/>      */}
       {/* <Cadastro/> */}
-      <Home/>
-      {/* <Producs/> */}
+      {/* <Home/> */}
+      <Products/>
       
     </SafeAreaView>
   );
