@@ -9,17 +9,17 @@ export const HighlightsSection = styled.View`
     gap: 5px;
 `
 
-export const TitleHighlight = styled.View`
+export const TitleHighlight = styled.Text`
     font-size: 25px;
     font-weight: 700;
 `
 
-export const TextHighlight = styled.View`
-    color: #375EE7;
+export const TextHighlight = styled.Text`
+    color: #375EE7
 `
 
 export const Scroll = styled.ScrollView.attrs({
-    ContentContainerStyle:{
-        gap:20
+    contentContainerStyle:{
+        gap: 20
     }
 })``

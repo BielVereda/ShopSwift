@@ -1,35 +1,37 @@
-import { Container } from "react-native"
-import { Image } from "react-native"
-import { ScrollView } from "react-native-web"
-
-import logo from "../../assets/images/logo.png"
-import destaque1 from "../../assets/images/destaque1.png"
-import destaque2 from "../../assets/images/destaque2.png"
-import destaque3 from "../../assets/images/destaque3.png"
-
-import camisetasIcon from "../../assets/icons/camisetasIcon.png"
-import eletricosIcon from "../../assets/icons/eletricosIcon.png"
-import jogosIcon from "../../assets/icons/jogosIcon.png"
-import tenisIcon from "../../assets/icons/tenisIcon.png"
-
-import { HighlightsSection, TitleHighlight, TextHighlight } from "./style"
+import { Image, ScrollView } from "react-native"
+import { Container, HighlightsSection, Scroll, TextHighlight, TitleHighlight } from "./style"
+import logo from '../../../assets/logo.png'
+import destaque1 from '../../../assets/destaque1.png'
+import destaque2 from '../../../assets/destaque2.png'
+import destaque3 from '../../../assets/destaque3.png'
+import { CategorySection } from "../../components/CategorySection"
+import { ProductsSection } from "../../components/ProductsSection"
 
 export const Home = () => {
     return(
-    <Container>
+        <ScrollView>
+            
+            <Container>
 
-        <Image source={logo} />
+                <Image source={logo} />
 
-        <HighlightsSection>
-            <TitleHighlight>Nosso <TextHighlight>Destaques</TextHighlight></TitleHighlight>
+                <HighlightsSection>
 
-            <ScrollView horizontal showHorizontalScrollIndicator={false}>
-                <Image source={destaque1} />
-                <Image source={destaque2} />
-                <Image source={destaque3} />
-            </ScrollView>
-        </HighlightsSection>
+                    <TitleHighlight>Nossos <TextHighlight>Destaques</TextHighlight></TitleHighlight>
+                    
+                    <Scroll horizontal showsHorizontalScrollIndicator={false}>
+                        <Image source={destaque1}/>
+                        <Image source={destaque2}/>
+                        <Image source={destaque3}/>
+                    </Scroll>
 
-    </Container>
+                </HighlightsSection>
+
+                <CategorySection/>
+
+                <ProductsSection/>
+
+            </Container>
+        </ScrollView>
     )
 }
