@@ -1,87 +1,40 @@
-import React, { useState } from 'react';
-import { View, Text, TextInput, TouchableOpacity, Image } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
-import Svg, { Defs, RadialGradient, Stop, Rect } from 'react-native-svg';
-import { styles } from './style';
+import { Image, Text, View, TextInput, Pressable } from 'react-native'
+import { styles } from './style'
+import logo from '../../../assets/logo.png'
 
-export default function LoginScreen() {
-    const [email, setEmail] = useState('');
-    const [senha, setSenha] = useState('');
-
+export const Login = () => {
     return (
-        <SafeAreaView style={styles.container}>
-            <View style={styles.content}>
-                <View style={styles.logoContainer}>
-                    <View style={styles.logoGlowContainer}>
-                        <Svg height="100" width="100" viewBox="0 0 100 100">
-                            <Defs>
-                                <RadialGradient
-                                    id="glow"
-                                    cx="50%"
-                                    cy="50%"
-                                    rx="50%"
-                                    ry="50%"
-                                    fx="50%"
-                                    fy="50%"
-                                >
-                                    <Stop offset="0%" stopColor="#536DFE" stopOpacity="0.5" />
-                                    <Stop offset="50%" stopColor="#536DFE" stopOpacity="0.3" />
-                                    <Stop offset="100%" stopColor="#536DFE" stopOpacity="0" />
-                                </RadialGradient>
-                            </Defs>
-                            <Rect x="0" y="0" width="100" height="100" fill="url(#glow)" />
-                        </Svg>
+
+        <View style={styles.containerHome}>
+
+            <Image source={logo} />
+
+            <View style={styles.contentHome}>
+                <Text style={styles.txtTitulo}>Faça login e se <Text style={styles.txtHighlights}>surpreenda</Text></Text>
+
+                <View style={styles.containerForm}>
+                    
+                    <View style={styles.containerInputs}>
+                        <View>
+                            <Text>E-mail:</Text>
+                            <TextInput keyboardType='email-address' style={styles.input}/>
+                        </View>
+
+                        <View>
+                            <Text>Senha:</Text>
+                            <TextInput secureTextEntry={true} style={styles.input}/>
+                        </View>
                     </View>
 
-                    <Image
-                        source={require('../../assets/images/logo.png')}
-                        style={styles.logo}
-                    />
+                    <Pressable style={styles.buttonLogin}>
+                        <Text style={styles.txtLogin}>Entrar</Text>
+                    </Pressable>
                 </View>
 
-                <View style={styles.titleContainer}>
-                    <Text style={styles.titleText}>
-                        Faça login e se{'\n'}
-                        <Text style={styles.titleHighlight}>surpreenda!</Text>
-                    </Text>
-                </View>
-
-                <View style={styles.inputContainer}>
-                    <Text style={styles.label}>E-mail</Text>
-                    <TextInput
-                        style={styles.input}
-                        placeholder="Digite seu e-mail"
-                        placeholderTextColor="#94A3B8"
-                        keyboardType="email-address"
-                        autoCapitalize="none"
-                        value={email}
-                        onChangeText={setEmail}
-                    />
-                </View>
-
-                <View style={styles.inputContainer}>
-                    <Text style={styles.label}>Senha:</Text>
-                    <TextInput
-                        style={styles.input}
-                        placeholder="Digite sua senha"
-                        placeholderTextColor="#94A3B8"
-                        secureTextEntry
-                        value={senha}
-                        onChangeText={setSenha}
-                    />
-                </View>
-
-                <TouchableOpacity style={styles.button} activeOpacity={0.8}>
-                    <Text style={styles.buttonText}>Entrar</Text>
-                </TouchableOpacity>
-
-                <View style={styles.footerContainer}>
-                    <Text style={styles.footerText}>Não tem conta?</Text>
-                    <TouchableOpacity activeOpacity={0.7}>
-                        <Text style={styles.footerLink}>Criar conta</Text>
-                    </TouchableOpacity>
-                </View>
+                <Text style={styles.txtNaoTemConta}>Não tem uma conta? <Text style={styles.txtCriarConta}>Criar conta</Text></Text>
             </View>
-        </SafeAreaView>
-    );
+
+        </View>
+
+    )
 }
